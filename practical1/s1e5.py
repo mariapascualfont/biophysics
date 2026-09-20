@@ -27,6 +27,18 @@ cd = 2.5
 if args.cutoff_distance:
     cd = float(args.cutoff_distance)
 
+print ("\nSettings\n--------")
+
+for k, v in vars(args).items():
+    print ('{:10}:'.format(k), v)
+
+print ("\nSettings, again\n---------------")    
+
+#print the variables once assigned
+
+print(filename, cd)
+print()   
+
 
 # ---------------------------------
 
@@ -63,3 +75,4 @@ for model in st:
                     f"{res2.resname}{res2.id[1]} (N): "
                     f"{bond_distance:.2f} Å"
                 )
+
