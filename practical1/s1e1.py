@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+!/usr/bin/env python
 
 
 import argparse
@@ -22,6 +22,18 @@ args = parser.parse_args()
 
 filename = args.required_file
 d = args.distance
+
+print ("\nSettings\n--------")
+
+for k, v in vars(args).items():
+    print ('{:10}:'.format(k), v)
+
+print ("\nSettings, again\n---------------")    
+
+#print the variables once assigned
+
+print(filename, d)
+print()   
 
 
 # ---------------------------------
