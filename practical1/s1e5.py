@@ -25,7 +25,7 @@ args = parser.parse_args()
 filename = args.required_file
 cd = 2.5
 if args.cutoff_distance:
-    cd = args.cutoff_distance
+    cd = float(args.cutoff_distance)
 
 
 # ---------------------------------
